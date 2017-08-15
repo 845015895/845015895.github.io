@@ -1,0 +1,440 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	 <link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			
+    <title>
+    橙子客栈
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">MICCALL</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >git-学习笔记</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h2 id="Git学习笔记"><a href="#Git学习笔记" class="headerlink" title="Git学习笔记"></a><center>Git学习笔记</center></h2><h3 id="1-认识git"><a href="#1-认识git" class="headerlink" title="1.认识git"></a>1.认识git</h3><ul>
+<li><p>在学校的时候听说过git，和SVN的大致类型是一样的，都是版本管理系统，以前使用过SVN，SVN是一种集中式的版本管理系统，但是在了解了git之后，就觉得，git真的是一个很洋气的分布式版本控制系统。</p>
+</li>
+<li><p>在看了大致的讲解后，让我想到了一个平时一个有点让人头疼的事：在前一天自己写好的一个版本的网站，然后到第二天的时候，突然有个灵感，觉得某个地方可以进行修改，但是这时候并不能保证这个修改是否可以正常运行。所以这时候我的做法是把原来的版本先拷贝出来，以时间命名备份。然后再进行修改。</p>
+</li>
+<li><p>以前的做法肯定是可行的，但是如果修改的次数多了，就会发现自己已经默默地备份了很多的版本，这种做法难免觉得有些呆笨，就象这样</p>
+</li>
+</ul>
+<pre><code>![](http://i.imgur.com/xnL5z4e.png)
+</code></pre><ul>
+<li>而在了解后，发现git完美的解决了这个问题，不仅能够很好的控制版本，而且还能很好地记录某一个版本的修改记录和时间</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th style="text-align:right">修改者</th>
+<th style="text-align:center">说明</th>
+<th>时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td style="text-align:right">易子程</td>
+<td style="text-align:center">修改了信息１</td>
+<td>　2017-7-17 10:00</td>
+</tr>
+<tr>
+<td>2.0</td>
+<td style="text-align:right">张三</td>
+<td style="text-align:center">修改了信息２</td>
+<td>　2017-7-17 11:00</td>
+</tr>
+<tr>
+<td>3.0</td>
+<td style="text-align:right">李四</td>
+<td style="text-align:center">修改了信息３</td>
+<td>　2017-7-18 10:00</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-安装git（略过）"><a href="#2-安装git（略过）" class="headerlink" title="2.安装git（略过）"></a>2.安装git（略过）</h3><h3 id="3-创建版本库"><a href="#3-创建版本库" class="headerlink" title="3.创建版本库"></a>3.创建版本库</h3><p> 我创建版本库的步骤</p>
+<pre><code>cd e:
+mikdir learngit
+cd learngit
+git init
+</code></pre><blockquote>
+<p>Initialized empty Git repository in E:/learngit/.git/</p>
+</blockquote>
+<p>我发现多了一个.git目录，百度后才知道是git用来跟踪管理版本库的</p>
+<h3 id="4-添加文件"><a href="#4-添加文件" class="headerlink" title="4.添加文件"></a>4.添加文件</h3><pre><code>vim test.txt
+
+gittest
+test
+</code></pre><p> 保存好文件并退出vi</p>
+<pre><code>esc + : + wq
+</code></pre><p> 查看文件状态</p>
+<pre><code>git status
+</code></pre><p> 将文件添加进索引库</p>
+<pre><code>git add test.txt
+</code></pre><p> 出现了个 warning</p>
+<blockquote>
+<p>warning: LF will be replaced by CRLF in test.txt.</p>
+</blockquote>
+<p> 原来在windows中的换行符是CRLF,在linux中是LF,windows开发者还是执行一句命令比较好,这样没有进行过行尾结束的转换，那么文本文件就会按照原样存储</p>
+<blockquote>
+<p>git config –gobal core.autocrlf false </p>
+</blockquote>
+<p> 再查看文件状态 </p>
+<pre><code>git status
+</code></pre><blockquote>
+<p>changes to be committed<br>文件已准备提交</p>
+</blockquote>
+<p> 把文件提交到本地版本库分支</p>
+<pre><code>git commit test.txt -m &quot;feat(all):新加了一个test文本&quot;
+</code></pre><p> 查看commit日志</p>
+<pre><code>git log
+</code></pre><h3 id="5-关于工作区和暂缓区"><a href="#5-关于工作区和暂缓区" class="headerlink" title="5.关于工作区和暂缓区"></a>5.关于工作区和暂缓区</h3><ul>
+<li><p>工作区：保存目前正在处理档案的目录，Git相关的操作都会在这个目录下完成。</p>
+</li>
+<li><p>索引：位于工作目录和数据库之间，是为了向数据库提交作准备的暂存区域</p>
+</li>
+</ul>
+<blockquote>
+<p>在我的理解，之前创建的learngit本地仓库就属于一个工作区，而在使用git add 添加文件后，文件就到了一个暂缓区，在使用git commit后就只是把存在暂缓区的文件提交到本地仓库的当前分支上</p>
+</blockquote>
+<h3 id="6-撤销修改"><a href="#6-撤销修改" class="headerlink" title="6.撤销修改"></a>6.撤销修改</h3><pre><code>git checkout -- 文件名
+</code></pre><blockquote>
+<p>可以还原到上一次的操作</p>
+</blockquote>
+<h3 id="7-版本回退（慎用）"><a href="#7-版本回退（慎用）" class="headerlink" title="7.版本回退（慎用）"></a>7.版本回退（慎用）</h3><pre><code>git reset -- hard HEAD^
+</code></pre><blockquote>
+<p>回退到上一个版本，^^就是回退到上上个版本，以此类推</p>
+</blockquote>
+<p>在每一次提交后会有一个版本号</p>
+<pre><code>git reset --hard 版本号
+</code></pre><p>如果不记得版本号，可以查看每一次命令的记录来找回版本号</p>
+<pre><code>git reflog
+</code></pre><h3 id="8-分支管理"><a href="#8-分支管理" class="headerlink" title="8.分支管理"></a>8.分支管理</h3><blockquote>
+<p>分支就像是一个平行的世界，主分支是一个版本，在另一个子分支就可以根据主分支的版本进行修改，这个修改在回到主分支后是完全不影响的，在子分支修改后的东西如果可用，就可以将子分支和主分支的内容进行合并，如果子分支不可用，则可以删掉子分支</p>
+</blockquote>
+<p><strong>新建分支</strong></p>
+<pre><code>git checkout -b dev
+</code></pre><p>这个命令是以下两个命令的合并</p>
+<pre><code>git branch dev
+git checkut dev
+</code></pre><p><strong>查看分支</strong></p>
+<pre><code>git branch
+
+* dev
+ master
+</code></pre><p>这样就可以看到分支目录，前面有*号的就是当前分支</p>
+<p><strong>回到主分支</strong></p>
+<pre><code>git checkout master
+</code></pre><p><strong>合并分支</strong></p>
+<pre><code>git merge dev
+</code></pre><p>合并指定的dev分支到当前分支</p>
+<p><strong>删掉分支</strong></p>
+<pre><code>git branch -d dev
+</code></pre><blockquote>
+<p>使用分支来进行开发，代码可行后合并分支再删除分支，是非常方便和安全的</p>
+</blockquote>
+<p>创建和合并分支代码总结：</p>
+<ul>
+<li><p>查看分支：git branch</p>
+</li>
+<li><p>创建分支：git branch <name></name></p>
+</li>
+<li><p>切换分支：git checkout <name></name></p>
+</li>
+<li><p>创建+切换分支：git checkout -b <name></name></p>
+</li>
+<li><p>合并某分支到当前分支：git merge <name></name></p>
+</li>
+<li><p>删除分支：git branch -d <name></name></p>
+</li>
+</ul>
+<p><strong>合并冲突</strong><br>当在主分支和子分支各自都分别有新的提交，git是无法进行快速合并的，只能把各自的修改合并起来，然后等待去解决</p>
+<p>例如在两个分支上都修改了brach.txt文件<br>合并后查看文件<br>cat brach.txt</p>
+<pre><code>这里是dev分支
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+
+这里是master分支
+=======
+这里新加了一个feature1分支
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature1
+</code></pre><blockquote>
+<p>标记除了不同分支的内容</p>
+</blockquote>
+<p>手动修改内容<br>然后再提交</p>
+<p><strong>修改bug</strong><br>在正在主分支开发式，收到一个bug需要修改，此时可以储藏主分支，然后在子分支上进行修改bug,修改后合并，删除分支，恢复储藏。</p>
+<pre><code>git stash
+</code></pre><p>恢复现场,并删除stash内容，两种方法</p>
+<pre><code>git stash apply + git stash drop
+
+git stash pop
+</code></pre><p><em>强行删除分支</em></p>
+<pre><code>git branch -D xxx
+</code></pre><p><strong>分支总结：</strong><br>master分支和dev分支是两个指针，HEAD指向哪个指针，当前代码就在哪个分支。创建新的分支dev时，只是新增加一个dev指针，然后HEAD指向dev。此后，所做的更改就是针对dev这条线移动指针；如果把HEAD切换回master会发现代码还是以前的样子。如果想把dev的覆盖上来，就使用git merge dev。合并完成后，再删除dev分支，就只剩下master了。Git鼓励你使用分支完成某个任务，合并后再删掉分支，这和直接在master分支上工作效果是一样的，但过程更安全</p>
+<h3 id="9-标签"><a href="#9-标签" class="headerlink" title="9.标签"></a>9.标签</h3><p>1.打标签</p>
+<pre><code>git tag -a 0.1.3 -m &quot;Release version 0.1.3&quot;
+</code></pre><p>git tag 是命令</p>
+<p>-a 0.1.3是增加 名为0.1.3的标签</p>
+<p>-m 后面跟着的是标签的注释</p>
+<p>打标签的操作发生在我们commit修改到本地仓库之后。</p>
+<pre><code>git add .
+git commit -m &quot;fixed some bugs&quot;
+git tag -a 0.1.3 -m &quot;Release version 0.1.3&quot;
+</code></pre><p>2.打特定版本</p>
+<p>默认标签是打在最新提交的commit上的。有时候，如果忘了打标签，比如，现在已经是周五了，但应该在周一打的标签没有打，怎么办？方法是找到历史提交的commit id，然后打上就可以了：</p>
+<pre><code>git tag v0.9 6224937//对add merge这次提交打标签，它对应的commit id是6224937
+</code></pre><p>3.查看标签</p>
+<p>git tag//注意，标签不是按时间顺序列出，而是按字母排序的</p>
+<pre><code>&gt;git tag
+Alpha8.5
+Alpha8.6
+Alpha8.7
+Alpha8.76
+</code></pre><p>可以用git show <tagname>查看标签信息：</tagname></p>
+<pre><code>2&gt;git show Alpha8.76
+tag Alpha8.76
+Tagger: Orange Yi &lt;yizicheng@utimes.cc&gt;
+Date:   Fri Jul 21 14:40:48 2017 +0800
+
+
+Alpha8.76
+
+commit f3697fefbc2498dc92b5ed9e9d65af67e913393f
+Merge: ca355a4 3abbfe9
+Author: Orange Yi &lt;yizicheng@utimes.cc&gt;
+Date:   Fri Jul 21 14:40:02 2017 +0800
+
+Merge branch &apos;hotfix/Alpha8.76&apos;
+</code></pre><p>4.推送标签到远程服务器上</p>
+<pre><code>git push origin 标签名
+git push origin --tags
+</code></pre><p>–tags参数表示提交所有tag至服务器端</p>
+<p>5.获取打好标签的版本</p>
+<p>先 git clone 整个仓库，然后 git checkout tag_name 就可以取得 tag 对应的代码了。</p>
+<p>但是这时候 git 可能会提示你当前处于一个“detached HEAD” 状态，因为 tag 相当于是一个快照，是不能更改它的代码的，如果要在 tag 代码的基础上做修改，你需要一个分支：</p>
+<pre><code>git checkout -b branch_name tag_name 或者git fetch origin tag V1.2
+</code></pre><p>这样会从 tag 创建一个分支，然后就和普通的 git 操作一样了。</p>
+<p>6.删除标签的命令</p>
+<pre><code>git tag -d V1.2
+</code></pre><h3 id="命令总结"><a href="#命令总结" class="headerlink" title="命令总结"></a>命令总结</h3><p>配置</p>
+<pre><code>git config --global user.name Orange-Yi
+git config --global user.email yizicheng@utimes.cc
+
+git config --list #查看配置的信息
+
+git help config #获取帮助信息
+</code></pre><p>新建仓库</p>
+<pre><code>git init #初始化
+git status #获取状态
+git add file #.或*代表全部添加
+git commit -m &quot;xxx&quot;; #此处注意乱码
+git remote add origin git@github.com:yanhaijing/test.git #添加源
+git push -u origin master #push同时设置默认跟踪分支
+</code></pre>
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yizicheng.win/2017/08/15/git-学习笔记/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yizicheng.win/2017/08/15/git-学习笔记/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
