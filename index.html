@@ -138,8 +138,7 @@ git init
 <p>Initialized empty Git repository in E:/learngit/.git/</p>
 </blockquote>
 <p>我发现多了一个.git目录，百度后才知道是git用来跟踪管理版本库的</p>
-<p>###4.添加文件</p>
-<pre><code>vim test.txt
+<h3 id="4-添加文件"><a href="#4-添加文件" class="headerlink" title="4.添加文件"></a>4.添加文件</h3><pre><code>vim test.txt
 
 gittest
 test
@@ -166,8 +165,7 @@ test
 <pre><code>git commit test.txt -m &quot;feat(all):新加了一个test文本&quot;
 </code></pre><p> 查看commit日志</p>
 <pre><code>git log
-</code></pre><p>###5.关于工作区和暂缓区</p>
-<ul>
+</code></pre><h3 id="5-关于工作区和暂缓区"><a href="#5-关于工作区和暂缓区" class="headerlink" title="5.关于工作区和暂缓区"></a>5.关于工作区和暂缓区</h3><ul>
 <li><p>工作区：保存目前正在处理档案的目录，Git相关的操作都会在这个目录下完成。</p>
 </li>
 <li><p>索引：位于工作目录和数据库之间，是为了向数据库提交作准备的暂存区域</p>
@@ -176,13 +174,11 @@ test
 <blockquote>
 <p>在我的理解，之前创建的learngit本地仓库就属于一个工作区，而在使用git add 添加文件后，文件就到了一个暂缓区，在使用git commit后就只是把存在暂缓区的文件提交到本地仓库的当前分支上</p>
 </blockquote>
-<p>###6.撤销修改</p>
-<pre><code>git checkout -- 文件名
+<h3 id="6-撤销修改"><a href="#6-撤销修改" class="headerlink" title="6.撤销修改"></a>6.撤销修改</h3><pre><code>git checkout -- 文件名
 </code></pre><blockquote>
 <p>可以还原到上一次的操作</p>
 </blockquote>
-<p>###.7版本回退（慎用）</p>
-<pre><code>git reset -- hard HEAD^
+<h3 id="7-版本回退（慎用）"><a href="#7-版本回退（慎用）" class="headerlink" title="7.版本回退（慎用）"></a>7.版本回退（慎用）</h3><pre><code>git reset -- hard HEAD^
 </code></pre><blockquote>
 <p>回退到上一个版本，^^就是回退到上上个版本，以此类推</p>
 </blockquote>
@@ -190,8 +186,7 @@ test
 <pre><code>git reset --hard 版本号
 </code></pre><p>如果不记得版本号，可以查看每一次命令的记录来找回版本号</p>
 <pre><code>git reflog
-</code></pre><p>###8.分支管理</p>
-<blockquote>
+</code></pre><h3 id="8-分支管理"><a href="#8-分支管理" class="headerlink" title="8.分支管理"></a>8.分支管理</h3><blockquote>
 <p>分支就像是一个平行的世界，主分支是一个版本，在另一个子分支就可以根据主分支的版本进行修改，这个修改在回到主分支后是完全不影响的，在子分支修改后的东西如果可用，就可以将子分支和主分支的内容进行合并，如果子分支不可用，则可以删掉子分支</p>
 </blockquote>
 <p><strong>新建分支</strong></p>
@@ -315,7 +310,7 @@ git push -u origin master #push同时设置默认跟踪分支
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yizicheng.win/2017/08/15/git-学习笔记/" data-id="cj6dcoe0c0001347xuwa05yyo" class="article-share-link">Share</a>
+      <a data-url="http://yizicheng.win/2017/08/15/git-学习笔记/" data-id="cj6dcxx0a0000yg7xoto9nab3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -360,7 +355,7 @@ git push -u origin master #push同时设置默认跟踪分支
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yizicheng.win/2017/08/15/hello-world/" data-id="cj6dcoe060000347x0oaapook" class="article-share-link">Share</a>
+      <a data-url="http://yizicheng.win/2017/08/15/hello-world/" data-id="cj6dcxx100001yg7x58vhdo19" class="article-share-link">Share</a>
       
       
     </footer>
